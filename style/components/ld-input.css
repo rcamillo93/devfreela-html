@@ -1,6 +1,6 @@
 .ld-input{
-    font-family: var(--font-family-base);
-    font-size: calc(var(--font-size-base) + 8px);
+    font-family: var(--ld-font-family-base);
+    font-size: calc(var(--ld-font-size-base) + 8px);
     border: none;
     background: none;
     border-bottom: 1px solid var(--ld-color-primary-light);
@@ -8,6 +8,7 @@
     transition: border-color .5s;
     padding-bottom:  10px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .ld-input:focus{

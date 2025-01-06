@@ -29,11 +29,13 @@
  <link rel="stylesheet" href="style/base/html.css">
 
 <!-- OBJECTS -->
+<link rel="stylesheet" href="style/objects/ld-wrapper.css">
 
 <!-- COMPONENTS -->
  <link rel="stylesheet" href="style/components/ld-button.css">
  <link rel="stylesheet" href="style/components/ld-input.css">
  <link rel="stylesheet" href="style/components/ld-radio.css">
+ <link rel="stylesheet" href="style/components/ld-header.css">
 
 
 <!-- PAGES - Devido a ser a páginas estaticas - React ou Angular não precisam disto  -->
@@ -64,24 +66,44 @@
         <main class="main-content">
 
             <div class="left">   
+       
+                <span class="steps">PASSO 1 DE 2</span>
 
-             <!--  <button class="ld-button">Continuar</button> --> 
+             <h1 class="main-title">
+                <span class="up">Olá!</span>
+                <span class="down">Vamos criar o seu cadastro.</span>
+             </h1>
 
-             <!--  <input class="ld-input" placeholder="Título"> --> 
 
-            <!--    <div class="ld-radio">
+             <div class="radio-buttons">
+                <h3 class="title">Qual o seu perfil</h3>
 
-                <label for="Dev">Dev</label>
-              
+                <div class="buttons">
 
-             </div> --> 
+                    <label class="ld-radio">
+                        Dev
+                        <input name="cargo" type="radio">
+                        <spa class="checkmark"></spa>
+                     </label>
+        
+                     <label class="ld-radio">
+                        Cliente
+                        <input  name="cargo" type="radio">
+                        <spa class="checkmark"></spa>
+                     </label>
+                     
+                </div>     
 
-             <label class="ld-radio">
-                Dev
-                <input type="radio">
-                <spa class="checkmark"></spa>
-             </label>
+             </div>
 
+
+             <input class="ld-input" placeholder="Nome completo"> 
+             <input type="date" class="ld-input" placeholder="Data de nascimento"> 
+             <input type="email" class="ld-input" placeholder="E-mail"> 
+             <input type="password" class="ld-input" placeholder="Senha"> 
+
+
+              <button class="ld-button">Continuar</button>
             </div>
 
             <div class="right">     
