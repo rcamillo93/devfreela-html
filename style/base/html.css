@@ -1,0 +1,6 @@
+html{
+    background-color: var(--ld-color-gray-lighter);
+
+    font-family: var(--font-family-base);
+    font-weight: 500;
+}

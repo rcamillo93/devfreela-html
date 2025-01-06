@@ -1,0 +1,26 @@
+.ld-radio{
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: calc(var(--font-size-base) + 8px);
+    font-family: var(--font-family-base);
+}
+
+.ld-radio > input{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ld-radio >.checkmark{
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 2px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

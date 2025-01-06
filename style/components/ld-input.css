@@ -1,0 +1,21 @@
+.ld-input{
+    font-family: var(--font-family-base);
+    font-size: calc(var(--font-size-base) + 8px);
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--ld-color-primary-light);
+    outline: none;
+    transition: border-color .5s;
+    padding-bottom:  10px;
+    width: 100%;
+}
+
+.ld-input:focus{
+    border-color: var(--ld-color-primary);
+
+}
+
+.ld-input::placeholder{
+    color: var(--ld-color-gray-dark);
+
+}

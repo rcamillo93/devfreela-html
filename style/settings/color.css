@@ -1,0 +1,14 @@
+:root{
+    /* PRIMARY */
+    --ld-color-primary: #0041BE;
+    --ld-color-primary-light: #004cd8;
+
+    /* DANGER */
+    --ld-color-danger: #FF2222;
+
+    /* GRAY */
+    --ld-color-gray-lighter: #F9FBFD;
+    --ld-color-gray-light: #B8B7B7;
+    --ld-color-gray: #767684
+    --ld-color-dark: #09090A;
+}
