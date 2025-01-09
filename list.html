@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List - LD</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">    
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- STYLES ITCSS -->
+
+<!-- SETTINGS (variáveis) -->
+<link rel="stylesheet" href="style/settings/wrapper.css">
+<link rel="stylesheet" href="style/settings/core.css">
+
+<link rel="stylesheet" href="style/settings/color.css">
+<link rel="stylesheet" href="style/settings/text.css">
+
+<!-- GENERIC -->
+ <link rel="stylesheet" href="style/generic/reset.css">
+ <link rel="stylesheet" href="style/generic/box-sizing.css">
+
+<!-- BASE -->
+ <link rel="stylesheet" href="style/base/html.css">
+
+<!-- OBJECTS -->
+<link rel="stylesheet" href="style/objects/ld-wrapper.css">
+
+<!-- COMPONENTS -->
+ <link rel="stylesheet" href="style/components/ld-button.css">
+ <link rel="stylesheet" href="style/components/ld-header.css">
+ <link rel="stylesheet" href="style/components/ld-table.css">
+
+
+<!-- PAGES - Devido a ser a páginas estaticas - React ou Angular não precisam disto  -->
+ 
+<link rel="stylesheet" href="style/pages/list.css">
+
+<!-- TRUMPS -->
+
+</head>
+
+<body>
+
+<!-- ld é o prefixo definido para o site -->
+<div class="ld-list">
+
+    <div class="ld-wrapper">
+        <header class="ld-header">
+            <div class="wrapper -has-user">
+
+                <div></div>
+
+                <div class="logo-wrapper">
+                    <img class="image" src="assets/logo/devfreela.svg" alt="logo">
+                </div>
+
+                <div class="user">
+                    <div class="info">
+                        <span class="name">Rafael Camillo</span>
+                        <span class="role">Desenvolvedor</span>
+                    </div>
+                    <div class="photo-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNMySAhwXD1FJsz7NE2Bm-9TVFepv-uZ0oiw&s" alt="Foto do usuário">
+                    </div>
+                </div>
+                
+            </div>
+
+        </header>
+
+        <main class="main-content -one-col">
+           
+            <div class="title-button">
+
+                <h1 class="title">Projetos</h1>
+
+                <div class="button-wrapper">
+                    <button class="ld-button -small">
+                        Novo Projeto
+                    </button>
+                </div>              
+
+            </div>
+
+            <div class="table-wrapper">
+                <div class="ld-table">
+                    <div class="head">
+                        <div class="row">
+                            <div>Título</div>
+                            <div>Custo Total</div>
+                            <div>Ações</div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="row">
+                            <div class="title-description">
+                                <h6 class="title">Plataforma de educação</h6>
+                                <p class="description">Descrição do projeto plataforma de educação...</p>
+                            </div>
+                            <div class="price">R$ 1.000.000,00</div>
+                            <div class="actions">
+                                <span class="edit material-icons">edit</span>
+                                <span class="delete material-icons">delete_outline</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="title-description">
+                                <h6 class="title">Plataforma de educação</h6>
+                                <p class="description">Descrição do projeto plataforma de educação...</p>
+                            </div>
+                            <div class="price">R$ 1.000.000,00</div>
+                            <div class="actions">
+                                <span class="edit material-icons">edit</span>
+                                <span class="delete material-icons">delete_outline</span>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+</body>
+</html>
