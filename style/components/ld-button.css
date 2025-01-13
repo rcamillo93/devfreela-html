@@ -10,6 +10,7 @@
     border: none;
     width: 100%;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .ld-button:hover{

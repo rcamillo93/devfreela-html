@@ -20,7 +20,11 @@ function cadastrar(){
     
     // Válida se foi seleciona o tipo de perfil
     if(!checkIfAnyRoleIsChecked()){
-        alert("Por favor selecione o tipo de perfil.");
+        Swal.fire({
+            title: "Algo deu errado!",
+            text: "Selecione o tipo de perfil!",
+            icon: "error"
+          });
         return;
     }
 
@@ -48,10 +52,18 @@ function cadastrar(){
         // Redirect para Listagem
         localStorage.setItem("userName", response.fullName);
         localStorage.setItem("role", response.role === "dev" ? "Desenvolvedor" : "Cliente");
+        localStorage.setItem("idClient", response.id); // usuário logado
 
-        alert("Usuário cadastrado com Sucesso");
-
-        window.location.href = "list.html";       
+          Swal.fire({
+            title: "Bom trabalho!",
+            text: "Cadastro realizado com Sucesso!",
+            icon: "success", 
+            confirmButtonText: "Ok!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "list.html";  
+            }
+          });         
     });
    // .catch(error => {
     //})

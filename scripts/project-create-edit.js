@@ -8,7 +8,21 @@
 window.onload = function(){
      
     setScreenTypeText();
+    fillInputs();
  
+}
+
+function fillInputs(){
+
+    if(screenType === 'edit'){
+        fetch(`https://6781509585151f714b0a4176.mockapi.io/api/projects/${params.id}`)
+        .then(response => response.json())
+        .then(project => {
+            document.querySelector("#title").value = project.title;
+            document.querySelector("#totalCost").value = project.totalCost;
+            document.querySelector("#description").value = project.description;
+        })
+    }
 }
 
 function setScreenTypeText(){
@@ -36,7 +50,7 @@ function createOrEdit(){
         title: document.querySelector("#title").value,
         totalCost: document.querySelector("#totalCost").value,
         description: document.querySelector("#description").value,
-        idClient: "1"
+        idClient: localStorage.getItem("idClient")
     }
 
     // ENVIAR PARA API
@@ -54,7 +68,17 @@ function createOrEdit(){
     .then(response => {
        //console.log(response);
        let msg = screenType === 'edit' ? 'Projeto alterado com Sucesso!' : 'Projeto cadastrado com Sucesso';
-       alert(msg);
+       
+       Swal.fire({
+        title: "Bom trabalho!",
+        text: msg,
+        icon: "success", 
+        confirmButtonText: "Ok!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = "list.html"; 
+        }
+      });      
     });
    // .catch(error => {
     //})
